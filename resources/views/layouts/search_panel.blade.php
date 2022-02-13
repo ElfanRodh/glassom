@@ -88,10 +88,10 @@
       </a>
       <a href="#" class="flex space-x-4">
         <div class="flex-shrink-0">
-          <img class="w-10 h-10 rounded-lg" src="{{ asset('images/avatar.jpg') }}" alt="Ahmed Kamel" />
+          <img class="w-10 h-10 rounded-lg" src="{{ asset('images/avatar.jpg') }}" alt="Elfan Rodhian" />
         </div>
         <div class="flex-1 max-w-xs overflow-hidden">
-          <h4 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Ahmed Kamel</h4>
+          <h4 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Elfan Rodhian</h4>
           <p class="text-sm font-normal text-gray-400 truncate dark">
             Last activity 3h ago.
           </p>
@@ -100,10 +100,10 @@
       </a>
       <a href="#" class="flex space-x-4">
         <div class="flex-shrink-0">
-          <img class="w-10 h-10 rounded-lg" src="{{ asset('images/cover-2') }}.jpg" alt="glass dark:glass-dark backdrop-blur-[40px]som Dashboard" />
+          <img class="w-10 h-10 rounded-lg" src="{{ asset('images/cover-2') }}.jpg" alt="Glassom Dashboard" />
         </div>
         <div class="flex-1 max-w-xs overflow-hidden">
-          <h4 class="text-sm font-semibold text-gray-600 dark:text-gray-200">glass dark:glass-dark backdrop-blur-[40px]som Dashboard</h4>
+          <h4 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Glassom Dashboard</h4>
           <p class="text-sm font-normal text-gray-400 truncate dark">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
           </p>
@@ -113,10 +113,10 @@
       <template x-for="i in 10" x-key="i">
         <a href="#" class="flex space-x-4">
           <div class="flex-shrink-0">
-            <img class="w-10 h-10 rounded-lg" src="{{ asset('images/cover-3') }}.jpg" alt="glass dark:glass-dark backdrop-blur-[40px]som Dashboard" />
+            <img class="w-10 h-10 rounded-lg" src="{{ asset('images/cover-3') }}.jpg" alt="Glassom Dashboard" />
           </div>
           <div class="flex-1 max-w-xs overflow-hidden">
-            <h4 class="text-sm font-semibold text-gray-600 dark:text-gray-200">glass dark:glass-dark backdrop-blur-[40px]som Dashboard</h4>
+            <h4 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Glassom Dashboard</h4>
             <p class="text-sm font-normal text-gray-400 truncate dark">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             </p>

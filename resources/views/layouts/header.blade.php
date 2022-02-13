@@ -157,7 +157,7 @@
           class="transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
         >
           <span class="sr-only">User menu</span>
-          <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.png') }}" alt="Ahmed Kamel" />
+          <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.jpg') }}" alt="Elfan Rodhian" />
         </button>
 
         <!-- User dropdown menu -->
@@ -303,16 +303,21 @@
       </div>
 
       <!-- Components links -->
-      <div x-data="{ isActive: false, open: false }">
+      <div
+        x-data="{ 
+          open: {{ $menu == "components" ? 'true' : 'false' }} ,
+          isActive: '{{ $submenu }}'
+        }"
+      >
         <!-- active classes 'glass dark:glass-dark backdrop-blur-[40px]' -->
         <a
           href="#"
           @click="$event.preventDefault(); open = !open"
           class="flex items-center p-2 text-gray-500 rounded-xl dark:text-gray-200 hover:glass dark:glass-dark backdrop-blur-[40px]"
-          :class="{ 'glass dark:glass-dark backdrop-blur-[40px]': isActive || open }"
+          :class="{ 'glass dark:glass-dark backdrop-blur-[40px]': open }"
           role="button"
           aria-haspopup="true"
-          :aria-expanded="(open || isActive) ? 'true' : 'false'"
+          :aria-expanded="(open) ? 'true' : 'false'"
         >
           <span aria-hidden="true">
             <svg
@@ -349,53 +354,60 @@
           <!-- active & hover classes 'text-gray-700 dark:text-gray-200' -->
           <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
           <a
-            href="#"
+            href="/alert"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            :class="{ 'dark:text-slate-200 text-gray-700 font-bold' : isActive == 'alert', 'text-gray-500 dark:text-gray-300' : isActive != 'alert' }" 
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Alerts (soon)
+            Alerts
           </a>
           <a
-            href="#"
+            href="/button"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            :class="{ 'dark:text-slate-200 text-gray-700 font-bold' : isActive == 'button', 'text-gray-500 dark:text-gray-300' : isActive != 'button' }" 
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Buttons (soon)
+            Buttons
           </a>
           <a
-            href="#"
+            href="card"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            :class="{ 'dark:text-slate-200 text-gray-700 font-bold' : isActive == 'card', 'text-gray-500 dark:text-gray-300' : isActive != 'card' }" 
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Cards (soon)
+            Cards
           </a>
           <a
-            href="#"
+            href="dropdown"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            :class="{ 'dark:text-slate-200 text-gray-700 font-bold' : isActive == 'dropdown', 'text-gray-500 dark:text-gray-300' : isActive != 'dropdown' }" 
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Dropdowns (soon)
+            Dropdowns
           </a>
           <a
-            href="#"
+            href="/form"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            :class="{ 'dark:text-slate-200 text-gray-700 font-bold' : isActive == 'form', 'text-gray-500 dark:text-gray-300' : isActive != 'form' }" 
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Forms (soon)
+            Forms
           </a>
           <a
-            href="#"
+            href="/list"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            :class="{ 'dark:text-slate-200 text-gray-700 font-bold' : isActive == 'list', 'text-gray-500 dark:text-gray-300' : isActive != 'list' }" 
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Lists (soon)
+            Lists
           </a>
           <a
-            href="#"
+            href="/modal"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            :class="{ 'dark:text-slate-200 text-gray-700 font-bold' : isActive == 'modal', 'text-gray-500 dark:text-gray-300' : isActive != 'modal' }" 
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Modals (soon)
+            Modals
           </a>
         </div>
       </div>
@@ -412,10 +424,10 @@
           href="#"
           @click="$event.preventDefault(); open = !open"
           class="flex items-center p-2 text-gray-500 rounded-xl dark:text-gray-200 hover:glass dark:glass-dark backdrop-blur-[40px]"
-          :class="{ 'glass dark:glass-dark backdrop-blur-[40px]': isActive || open }"
+          :class="{ 'glass dark:glass-dark backdrop-blur-[40px]': open }"
           role="button"
           aria-haspopup="true"
-          :aria-expanded="(open || isActive) ? 'true' : 'false'"
+          :aria-expanded="(open) ? 'true' : 'false'"
         >
           <span aria-hidden="true">
             <svg
@@ -462,42 +474,43 @@
           <a
             href="/404"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            :class="{ 'dark:text-slate-200 text-gray-700 font-bold' : isActive == '404', 'text-gray-500 dark:text-gray-300' : isActive != '404' }" 
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
             404
           </a>
           <a
-            href="pages/500.html"
+            href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            500
+            500 (soon)
           </a>
           <a
             href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
             Profile (soon)
           </a>
           <a
             href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
             Pricing (soon)
           </a>
           <a
             href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
             Kanban (soon)
           </a>
           <a
             href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
             Feed (soon)
           </a>
@@ -551,32 +564,32 @@
           <!-- active & hover classes 'text-gray-700 dark:text-gray-200' -->
           <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
           <a
-            href="auth/register.html"
+            href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Register
+            Register (soon)
           </a>
           <a
-            href="auth/login.html"
+            href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Login
+            Login (soon)
           </a>
           <a
-            href="auth/forgot-password.html"
+            href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Forgot Password
+            Forgot Password (soon)
           </a>
           <a
-            href="auth/reset-password.html"
+            href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Reset Password
+            Reset Password (soon)
           </a>
         </div>
       </div>
@@ -628,25 +641,18 @@
           <!-- active & hover classes 'text-gray-700 dark:text-gray-200' -->
           <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
           <a
-            href="layouts/two-columns-sidebar.html"
+            href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Two Columns Sidebar
+            Default Sidebar (soon)
           </a>
           <a
-            href="layouts/mini-plus-one-columns-sidebar.html"
+            href="#"
             role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
+            class="block p-2 text-sm duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
           >
-            Mini + One Columns Sidebar
-          </a>
-          <a
-            href="layouts/mini-column-sidebar.html"
-            role="menuitem"
-            class="block p-2 text-sm text-gray-500 dark:text-gray-400 duration-200 rounded-md dark:hover:text-slate-200 hover:text-gray-700"
-          >
-            Mini Column Sidebar
+            Mini Column Sidebar (soon)
           </a>
         </div>
       </div>
@@ -770,7 +776,7 @@
         class="block transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
       >
         <span class="sr-only">User menu</span>
-        <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.jpg') }}" alt="Ahmed Kamel" />
+        <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.jpg') }}" alt="Elfan Rodhian" />
       </button>
 
       <!-- User dropdown menu -->

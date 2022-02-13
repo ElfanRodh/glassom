@@ -5,7 +5,7 @@
       <div>
         <div class="flex-shrink-0 py-1 md:py-4 flex flex-row items-center justify-between md:justify-center">
           <div class="text-left md:text-center m-auto mx-2 my-2 md:mx-auto md:my-6">
-            <img src="{{ asset('images/avatar.png') }}" class="w-12 h-12 m-auto hidden md:block" alt="">
+            <img src="{{ asset('images/avatar.jpg') }}" class="w-12 h-12 m-auto hidden md:block" alt="">
             <span class="font-bold">Halo, </span>
             <span class="text-base">Rodhian</span>
             <span class="text-xs block">Administrator</span>

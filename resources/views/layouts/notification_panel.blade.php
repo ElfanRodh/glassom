@@ -190,15 +190,15 @@
                 <img
                   class="object-cover rounded-full w-9 h-9"
                   src="{{ asset('images/avatar.jpg') }}"
-                  alt="Ahmed kamel"
+                  alt="Rodhian"
                 />
               </span>
               <div class="absolute h-24 p-px -mt-3 -ml-px bg-slate-50 left-1/2 dark:bg-slate-800"></div>
             </div>
             <div class="flex-1 overflow-hidden">
-              <h5 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Ahmed Kamel</h5>
+              <h5 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Rodhian</h5>
               <p class="text-sm font-normal text-gray-400 dark:text-gray-300 truncate">
-                Shared new project "glass dark:glass-dark backdrop-blur-[40px]som Dashboard"
+                Shared new project "Glasssom Dashboard"
               </p>
               <span class="text-sm font-normal text-gray-400 dark:text-gray-300"> 1d ago </span>
             </div>
@@ -211,7 +211,7 @@
                 <img
                   class="object-cover rounded-full w-9 h-9"
                   src="{{ asset('images/avatar-1') }}.jpg"
-                  alt="Ahmed kamel"
+                  alt="Rodhian"
                 />
               </span>
               <div class="absolute h-24 p-px -mt-3 -ml-px bg-slate-50 left-1/2 dark:bg-slate-800"></div>
@@ -219,7 +219,7 @@
             <div class="flex-1 overflow-hidden">
               <h5 class="text-sm font-semibold text-gray-600 dark:text-gray-200">John</h5>
               <p class="text-sm font-normal text-gray-400 dark:text-gray-300 truncate">
-                Commit new changes to glass dark:glass-dark backdrop-blur-[40px]som Dashboard project.
+                Commit new changes to Glasssom Dashboard project.
               </p>
               <span class="text-sm font-normal text-gray-400 dark:text-gray-300"> 10h ago </span>
             </div>
@@ -232,15 +232,15 @@
                 <img
                   class="object-cover rounded-full w-9 h-9"
                   src="{{ asset('images/avatar.jpg') }}"
-                  alt="Ahmed kamel"
+                  alt="Rodhian"
                 />
               </span>
               <div class="absolute h-24 p-px -mt-3 -ml-px bg-slate-50 left-1/2 dark:bg-slate-800"></div>
             </div>
             <div class="flex-1 overflow-hidden">
-              <h5 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Ahmed Kamel</h5>
+              <h5 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Rodhian</h5>
               <p class="text-sm font-normal text-gray-400 dark:text-gray-300 truncate">
-                Release new version "glass dark:glass-dark backdrop-blur-[40px]som Dashboard"
+                Release new version "Glasssom Dashboard"
               </p>
               <span class="text-sm font-normal text-gray-400 dark:text-gray-300"> 20d ago </span>
             </div>
@@ -254,7 +254,7 @@
                   <img
                     class="object-cover rounded-full w-9 h-9"
                     src="{{ asset('images/avatar.jpg') }}"
-                    alt="Ahmed kamel"
+                    alt="Rodhian"
                   />
                 </span>
                 <div
@@ -262,9 +262,9 @@
                 ></div>
               </div>
               <div class="flex-1 overflow-hidden">
-                <h5 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Ahmed Kamel</h5>
+                <h5 class="text-sm font-semibold text-gray-600 dark:text-gray-200">Rodhian</h5>
                 <p class="text-sm font-normal text-gray-400 dark:text-gray-300 truncate">
-                  Release new version "glass dark:glass-dark backdrop-blur-[40px]som Dashboard"
+                  Release new version "Glasssom Dashboard"
                 </p>
                 <span class="text-sm font-normal text-gray-400 dark:text-gray-300"> 20d ago </span>
               </div>

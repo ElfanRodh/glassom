@@ -655,7 +655,7 @@
                     class="transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
                     <span class="sr-only">User menu</span>
-                    <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.jpg') }}" alt="Ahmed Kamel" />
+                    <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.jpg') }}" alt="Elfan Rodhian" />
                   </button>
 
                   <!-- User dropdown menu -->
@@ -842,7 +842,7 @@
                     class="block transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
                     <span class="sr-only">User menu</span>
-                    <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.jpg') }}" alt="Ahmed Kamel" />
+                    <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.jpg') }}" alt="Elfan Rodhian" />
                   </button>
 
                   <!-- User dropdown menu -->
@@ -1573,7 +1573,7 @@
             <div>
               Made by
               <a href="https://github.com/Kamona-WD" target="_blank" class="text-blue-500 hover:underline"
-                >Ahmed Kamel</a
+                >Elfan Rodhian</a
               >
             </div>
           </footer>
@@ -1948,7 +1948,7 @@
                       <div class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"></div>
                     </div>
                     <div class="flex-1 overflow-hidden">
-                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Ahmed Kamel</h5>
+                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Elfan Rodhian</h5>
                       <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
                         Shared new project "K-WD Dashboard"
                       </p>
@@ -1990,7 +1990,7 @@
                       <div class="absolute h-24 p-px -mt-3 -ml-px bg-primary-50 left-1/2 dark:bg-primary-darker"></div>
                     </div>
                     <div class="flex-1 overflow-hidden">
-                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Ahmed Kamel</h5>
+                      <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Elfan Rodhian</h5>
                       <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
                         Release new version "K-WD Dashboard"
                       </p>
@@ -2014,7 +2014,7 @@
                         ></div>
                       </div>
                       <div class="flex-1 overflow-hidden">
-                        <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Ahmed Kamel</h5>
+                        <h5 class="text-sm font-semibold text-gray-600 dark:text-light">Elfan Rodhian</h5>
                         <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
                           Release new version "K-WD Dashboard"
                         </p>
@@ -2118,10 +2118,10 @@
               </a>
               <a href="#" class="flex space-x-4">
                 <div class="flex-shrink-0">
-                  <img class="w-10 h-10 rounded-lg" src="{{ asset('images/avatar.jpg') }}" alt="Ahmed Kamel" />
+                  <img class="w-10 h-10 rounded-lg" src="{{ asset('images/avatar.jpg') }}" alt="Elfan Rodhian" />
                 </div>
                 <div class="flex-1 max-w-xs overflow-hidden">
-                  <h4 class="text-sm font-semibold text-gray-600 dark:text-light">Ahmed Kamel</h4>
+                  <h4 class="text-sm font-semibold text-gray-600 dark:text-light">Elfan Rodhian</h4>
                   <p class="text-sm font-normal text-gray-400 truncate dark:text-primary-lighter">
                     Last activity 3h ago.
                   </p>
