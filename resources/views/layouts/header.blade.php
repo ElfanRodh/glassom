@@ -157,7 +157,7 @@
           class="transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
         >
           <span class="sr-only">User menu</span>
-          <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.jpg') }}" alt="Ahmed Kamel" />
+          <img class="w-10 h-10 rounded-full" src="{{ asset('images/avatar.png') }}" alt="Ahmed Kamel" />
         </button>
 
         <!-- User dropdown menu -->
@@ -290,7 +290,7 @@
       >
         <a 
           href="/" 
-          class="flex items-center px-2 py-2 text-gray-500 rounded-xl dark:text-gray-200 hover:glass dark:glass-dark backdrop-blur-[40px] glass dark:glass-dark backdrop-blur-[40px]" 
+          class="flex items-center px-2 py-2 text-gray-500 rounded-xl dark:text-gray-200 hover:glass dark:glass-dark glass dark:glass-dark backdrop-blur-[40px]" 
           :class="{'glass dark:glass-dark backdrop-blur-[40px] font-bold': (isActive == true) || open}" role="menu" 
         >
           <span aria-hidden="true">
